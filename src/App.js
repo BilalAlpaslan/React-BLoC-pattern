@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router-dom";
+import { About } from "./Pages/About";
 import Article from './Pages/Articles'
 
 export default function App() {
@@ -6,7 +7,7 @@ export default function App() {
     <div>
       <Switch> 
         <Route path="/" exact                     component={Article} />
-        {/* <Route path="/about"                      component={About} /> */}
+        <Route path="/about"                      component={About} />
       </Switch>
     </div>
   );

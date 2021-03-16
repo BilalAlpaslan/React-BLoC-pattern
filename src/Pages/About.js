@@ -1,17 +1,12 @@
 import { useEntity } from 'simpler-state'
-import { articles, getArticles } from '../BLoC/article_bloc'
-import React, { Component } from "react";
-import { Button } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { articles } from '../BLoC/article_bloc'
 
-
-export function Appf (){
+export function About(){
     
     const article = useEntity(articles)
 
     return (
         <div>
-            <Link to="/about"><Button>+</Button></Link>
             {article.length > 0  ?(
                 article.map(article =>
                     <><br/><br/>
@@ -24,10 +19,4 @@ export function Appf (){
             ):(<div>veri yok</div>)}
         </div>
     )
-}
-
-
-export default class App extends Component{
-    componentDidMount=()=> getArticles();
-    render =()=> <Appf/>
 }
