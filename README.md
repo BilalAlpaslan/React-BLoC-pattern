@@ -1,4 +1,4 @@
-# Reac-BLoC-pattern
+# React-BLoC-pattern
 
 
 React BLoC pattern
