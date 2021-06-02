@@ -1,6 +1,6 @@
 import { useEntity } from 'simpler-state'
 import { articles, getArticles } from '../BLoC/article_bloc'
-import React, { Component, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
